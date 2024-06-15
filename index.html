@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ester Chemical Diagram Viewer</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        // Create a webview to embed the Python application
+        new WebView.WebView({
+            title: 'Ester Chemical Diagram Viewer',
+            url: 'http://localhost:23948',  // Adjust the port based on your webview output
+            width: 800,
+            height: 600,
+            resizable: true,
+            debug: true,
+        }).run();
+    </script>
+</body>
+</html>
